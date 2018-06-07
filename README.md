@@ -37,7 +37,7 @@ An installation guide can be found here: http://ceres-solver.org/installation.ht
 ### Eigen - Version 3.3.4
 On Ubuntu use: 
 ```
-$ sudo apt install libeigen3-dev../blob/master/LICENSE
+$ sudo apt install libeigen3-dev
 ```
 Pay attention if you using Ubuntu 16.04 LTS and the libeigen3-dev package. If the Eigen version is 3.3~beta1-2 it can create segmentaion faults when using ceres. In this case you need to build it by yourself.
 
