@@ -2,7 +2,7 @@ Rolling-Shutter aware differential Structure from Motion and Image Rectification
 =============
 ![alt text](https://github.com/ThomasZiegler/RS-aware-differential-SfM/blob/master/images/algorithm_overview.png)
 
-C++ implementation of the work propoesed by Zhuang et al. [1]. This work was done as part of the ETH 3D Vision course 252-0579-00L assesment in the spring semester 2018.
+C++ implementation of the work proposed by Zhuang et al. [1]. This work was done as part of the ETH 3D Vision course 252-0579-00L assesment in the spring semester 2018.
 
 The image above shows an overview of the algorithm.
 1. Starting from two consecutive rolling shutter frames.
