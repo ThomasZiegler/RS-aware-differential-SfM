@@ -1,4 +1,4 @@
-Rolling-Shutter aware differential Structure from Motion and Image Rectification
+Rolling-Shutter Aware Differential Structure from Motion and Image Rectification
 =============
 ![alt text](https://github.com/ThomasZiegler/RS-aware-differential-SfM/blob/master/images/algorithm_overview.png)
 
