@@ -24,7 +24,7 @@ The image above shows an overview of the algorithm.
 The code has been developed and tested with the following versions of packages. Ohter versions might work as well but haven't been tested! 
 
 ### Boost - Version 1.58.0 
-Boost is only used to create automatic a new folder for each test case. On Ubuntu use:
+Boost is only used to create automatically a new folder for each test case. On Ubuntu use:
 ```
 $ sudo apt install libboost-all-dev
 ```
