@@ -2,13 +2,13 @@ Rolling-Shutter aware differential Structure from Motion and Image Rectification
 =============
 ![alt text](https://github.com/ThomasZiegler/RS-aware-differential-SfM/blob/master/images/algorithm_overview.png)
 
-C++ implementation of the work proposed by Zhuang et al. [1]. This work was done as part of the ETH 3D Vision course 252-0579-00L assesment in the spring semester 2018.
+C++ implementation of the work proposed by Zhuang et al. [1]. This work was done as part of the ETH 3D Vision course 252-0579-00L in 2018.
 
 The image above shows an overview of the algorithm.
 1. Starting from two consecutive rolling shutter frames.
 2. The flow gets extracted using Deep Flow [2].
-3. From the flow an RS-aware depth map and relative camera poses are extracted. 
-4. With the known poses for each scanline the image can reprojected into an global shutter image frame for rectification.
+3. Using the flow, an RS-aware depth map and relative camera poses are estimated. 
+4. With the known poses for each scanline the image can reprojected into a global shutter image frame for rectification.
 
 
 ## Authors
@@ -21,16 +21,16 @@ The image above shows an overview of the algorithm.
 
 
 ## Dependencies
-The code has been developed and tested with the following versions of packages. Ohter versions might work as well but have not been tested! 
+The code has been developed and tested with the following versions of packages. Ohter versions might work as well, but have not been tested! 
 
 ### Boost - Version 1.58.0 
-Boost is only used to create automatically a new folder for each test case. On Ubuntu use:
+Boost is only used to automatically create a new folder for each test case. On Ubuntu use:
 ```
 $ sudo apt install libboost-all-dev
 ```
 
 ### Ceres Solver - Version 1.14.0
-Ceres solver is used for the depth estimation and the nonlinear refinement, respectively. 
+Ceres Solver is used for depth estimation and nonlinear refinement. 
 
 An installation guide can be found here: http://ceres-solver.org/installation.html.
 
@@ -39,12 +39,12 @@ On Ubuntu use:
 ```
 $ sudo apt install libeigen3-dev
 ```
-Pay attention if you using Ubuntu 16.04 LTS and the libeigen3-dev package. If the Eigen version is 3.3~beta1-2 it can create segmentaion faults when using ceres. In this case you need to build it by yourself.
+Pay attention if you use Ubuntu 16.04 LTS and the libeigen3-dev package. Eigen version 3.3~beta1-2 can create segmentaion faults when using Ceres. In this case you need to build it by yourself.
 
 ### Open CV - Version 3.4.0
 For the use of Deep-Flow it is important that beside the main package also the extra modules (https://github.com/opencv/opencv_contrib) are installed. 
 
-It's best to build OpenCV yourself to avoid mismatches between main package and extra modules.
+It is best to build OpenCV yourself to avoid mismatches between main package and extra modules.
 ```
 $ cd /path/to/your/workspace
 $ git clone https://github.com/opencv/opencv.git
@@ -67,4 +67,3 @@ $ sudo make install
 
 ## License
 The source code is released under the [GNU General Public License](./LICENSE).
-
