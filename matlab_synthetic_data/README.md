@@ -14,11 +14,11 @@ $ sudo apt install apt-get install libjpeg62
 ```
 
 
-## Usage:
+## Usage
 
 Run the file castle.m with the desired motion parameters. By default it will generate the data used for figure 7 in the project report (parameter sweeps).
 
-### Note:
+### Note
 - Your MATLAB path is placed in the installtion directory of the renderer (where the .mexa64 file is).
 - The .osg model should be in the same directory.
 - You can adjust the output folder in the file start_generating.m
