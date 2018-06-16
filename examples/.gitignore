@@ -1,4 +1,0 @@
-# ignore everything except given examples
-*
-!/.gitignore
-!/real_world/example1/*.tar.gz

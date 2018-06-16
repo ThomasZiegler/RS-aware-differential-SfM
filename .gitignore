@@ -1,0 +1,6 @@
+src/cmake-build-debug
+src/cmake-build-release
+src/.idea
+
+/examples/*
+!examples/README.md
