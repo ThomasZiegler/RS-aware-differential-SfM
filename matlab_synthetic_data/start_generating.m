@@ -1,8 +1,7 @@
 function start_generating(width, gamma_values, k_values, w_values, v_values)
     % Take video (store renderings from all camera positions)
     take_video = 0;
-    method_trajectory_calculation = 'beta';
-    path_to_store = '~/Desktop/test/';
+    path_to_store = '~/generated_data/';
     
     height = width;  % assuming quadratic images
     
@@ -59,7 +58,7 @@ function start_generating(width, gamma_values, k_values, w_values, v_values)
                     csvwrite(strcat(dir, 'true_v.csv'), v_0');
                     
                     %% Calculate trajectory of camera
-                    [R, T] = calculate_camera_trajectory(height, R_0, T_0, gamma, w_0, v_0, k, method_trajectory_calculation);
+                    [R, T] = calculate_camera_trajectory(height, R_0, T_0, gamma, w_0, v_0, k);
 
                     %% Take RS images
                     take_sequence(dir, model, width, height, A, R, T, take_video);

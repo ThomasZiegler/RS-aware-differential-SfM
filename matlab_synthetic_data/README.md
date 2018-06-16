@@ -1,4 +1,3 @@
-
 # Synthetic data creation with Matlab renderer
 
 ## Download
@@ -17,6 +16,18 @@ $ sudo apt install apt-get install libjpeg62
 
 ## HOW-TO:
 
-Run the file castle.m with the desired motion parameters while your MATLAB path is 
-placed in the installtion directory of the renderer (where the .mexa64 file is).
-The .osg model should be in the same directory.
+Run the file castle.m with the desired motion parameters. By default it will generate the data used for figure 7 in the project report (parameter sweeps).
+
+### Note:
+- Your MATLAB path is placed in the installtion directory of the renderer (where the .mexa64 file is).
+- The .osg model should be in the same directory.
+- You can adjust the output folder in the file start_generating.m
+- Setting the flag "take_video" to 1 in the file start_generating.m the renderer will store every frame and not just the RS frames
+- You can adjust the intial pose of the renderer in the file setup_renderer.m. By default the virtual camera is positioned in front of the castle gate. 
+- Using the setting "vertical_lines" it will generate the images shown in figure 4 (results on synthetic data)
+
+
+
+## Data set
+
+We used the "castle" 3D mesh which can be downloaded from the following site: https://cvg.ethz.ch/research/rolling-shutter-stereo/
