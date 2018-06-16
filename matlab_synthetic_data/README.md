@@ -14,7 +14,7 @@ $ sudo apt install apt-get install libjpeg62
 ```
 
 
-## HOW-TO:
+## Usage:
 
 Run the file castle.m with the desired motion parameters. By default it will generate the data used for figure 7 in the project report (parameter sweeps).
 
