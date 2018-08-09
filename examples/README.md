@@ -8,11 +8,11 @@ We provide some sample data which both real world and synthetic with which the f
 ## Real World Data
 The following samples can be used in the *evaluateSingleRun()* method by uncomment the corresponding lines in the code. 
 
-- Example 1: Images used for figure 6 in report. Recorded at Buecheggplatz in Zuerich. Rectification works. 
-- Example 2: Images used for figure 1 in report. Recorded at ETH Höngerberg in Zuerich. Rectification works.
-- Example 3: Images used for figure 7 in report. Recorded at ETH Zentrum in Zuerich. Rectification works.
-- Example 4: Images taken at ETH Höngerberg in Zuerich. Rectification **does not** work due to wrong flow estimate from Deep Flow.
-- Example 5: Images taken at ETH Höngerberg in Zuerich. Rectification works partly with some artifacts due to wrong seperation between foreground and background in the flow estimate.
+- Example 1: Images used for figure 6 in report. Recorded at Buecheggplatz in Zürich. Rectification works. 
+- Example 2: Images used for figure 1 in report. Recorded at ETH Höngerberg in üerich. Rectification works.
+- Example 3: Images used for figure 7 in report. Recorded at ETH Zentrum in Zürich. Rectification works.
+- Example 4: Images taken at ETH Höngerberg in Zürich. Rectification **does not** work due to wrong flow estimate from Deep Flow.
+- Example 5: Images taken at ETH Höngerberg in Zürich. Rectification works partly with some artifacts due to wrong seperation between foreground and background in the flow estimate.
 
 ## Synthetic Data
 The following samples can be used in the *evaluateSingleRun()* method by uncomment the corresponding lines in the code. 
